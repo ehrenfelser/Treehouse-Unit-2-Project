@@ -1,8 +1,61 @@
-/* Media queries*/
-@media (min-width: 769px;) {
-    
+/* === MAIN CONTENT ===*/
+
+* {
+box-sizing: border-box;
+
 }
 
-@media (min-width: 1025px;) {
-    
+html{
+font-size: 1.25em;
+
+}
+
+img {
+margin: 0 auto;
+max-width: 90%;
+
+}
+
+body {
+text-align: center;
+min-height: 100vh;
+background-color: azure;
+
+}
+
+a {
+text-decoration: none;
+text-transform: uppercase;
+color: black;
+
+}
+
+h1,
+h2,
+h3 {
+text-align: center;
+margin: 0%;
+
+}
+
+h4{
+text-align: left;
+
+}
+
+p {
+font-size: 1em;
+margin-bottom: 2em;
+padding: 5px;
+text-align: center;
+
+}
+
+ul,
+li {
+list-style: none;
+padding: 5px;
+padding-left: 0%;
+text-align: center;
+
 }
