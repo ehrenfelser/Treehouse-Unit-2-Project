@@ -8,6 +8,7 @@ box-sizing: border-box;
 html{
 font-size: 1.25em;
 
+
 }
 
 img {
@@ -20,6 +21,7 @@ body {
 text-align: center;
 min-height: 100vh;
 background-color: azure;
+font-family: 'Raleway', sans-serif;
 
 }
 
@@ -59,3 +61,119 @@ padding-left: 0%;
 text-align: center;
 
 }
+
+h2,
+h3 {
+color: #093a58
+
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+/* === Navigation === */
+
+.header {
+text-align: center;
+
+}
+
+.my-name {
+font-size: 1.35em;
+margin: 0;
+
+}
+
+.nav-bar {
+text-align: center;
+display: block;
+padding: 10px 15px;
+color: black;
+
+
+}
+
+.nav-bar  a:hover {
+color: #646464
+
+}
+
+.profile-container,
+.nav-bar {
+font-size: 1em;
+display: block;
+padding: 10px 15px;
+
+}
+
+/* === media queries === */
+@media screen and (min-width: 768px){
+
+.main-header,
+.main-nav,
+.row,
+.footer{
+display: flex;
+
+}
+
+.main-header {
+flex-direction: column;
+align-items: center;
+
+}
+
+.image{
+max-width: 100%;
+
+}
+
+.profile-container {
+display: flex;
+flex-direction: row-reverse;
+color: #000;
+background-color: pink;
+padding: 3.5em;
+margin-bottom: 48px;
+
+}
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .header,
+    .nav-bar {
+background: #fafafa;
+
+    }
+
+    .header,
+    .profile-container, {
+flex-direction: row;
+
+    }
+
+    .profile-container {
+
+        margin-right: auto;
+    }
+
+    .nav-bar {
+margin-top: 0;
+align-self: center;
+
+    }
+
+    .nav-bar a {
+        color: pink;
+
+    }
+
+    .nav li {
+
+        margin-left: .60em;
+        margin-right: .60em;
+    }
+}
+
