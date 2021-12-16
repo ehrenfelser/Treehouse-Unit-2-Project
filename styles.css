@@ -2,183 +2,211 @@
 /* === MAIN CONTENT ===*/
 
 * {
-box-sizing: border-box;
-
-}
-
-html{
-font-size: 1.25em;
-
-
-}
-
-/* === Navigation === */
-
-.nav-bar {
-    text-align: center;
-    align-items: center;
+    box-sizing: border-box;
     
-}
-    
-
-
-.nav a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
-    font-weight: 300;
-    text-align: center;
-    padding: .5em;
-        
-}
-    
-.nav  a:hover {
-    color: pink
-    
-}
-    
-ul {
-    list-style: none;
-
-}
-    
-    
-li {
-    
-    text-align: center;
-    background-color: white;
-    
-}
-    
-/*==Body Content==*/
-
-
-img {
-margin: 0 auto;
-max-width: 90%;
-
-}
-
-body {
-display: flex;
-flex-direction: column;
-text-align: center;
-min-height: 100vh;
-background-color:whitesmoke;
-font-family: 'Raleway', sans-serif;
-
-}
-
-a {
-text-decoration: none;
-text-transform: uppercase;
-color: black;
-
-}
-
-h1,
-h2,
-h3 {
-text-align: center;
-margin: 0%;
-
-}
-
-
-
-
-p {
-font-size: 1em;
-margin-bottom: 2em;
-padding: 5px;
-text-align: center;
-
-}
-
-
-
-h2,
-h3 {
-color: #52483f
-
-}
-
-.profile-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%
-    
-    
-}
-
-
-/* font-family: 'Raleway', sans-serif; */
-
-
-
-
-/* === media queries === */
-
-@media screen and (min-width: 768px){
-
-    .nav-bar,
-    .nav,
-    .portfolio,
-    .footer,
-    .profile-container {
-        display: flex;
-
     }
-
+    
+    html{
+    font-size: 1.25em;
+    
+    
+    }
+    
+    /* === Navigation === */
+    
     .nav-bar {
-        flex-direction: column;
+        text-align: center;
+        align-items: center;
         
-
+        
     }
-
-  
-
-
-
+        
+    
+    .nav  a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        padding: 1em;
+            
+    }
+        
+    .nav a:hover {
+        color: pink
+        
+    }
+        
+    ul {
+        list-style: none;
+    
+    }
+        
+        
+    li {
+        
+        text-align: center;
+        background-color: white;
+        
+    }
+        
+    /*==Body Content==*/
+    
+    
+    img {
+    margin: 0 auto;
+    max-width: 90%;
+    
+    }
+    
+    body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-color:whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    
+    }
+    
+    h1,
+    h2,
+    h3 {
+    text-align: center;
+    margin: 0%;
+    
+    }
+    
+    
+    
+    
+    p {
+    font-size: 1em;
+    margin-bottom: 2em;
+    padding: 5px;
+    text-align: center;
+    
+    }
+    
+    
+    
+    h2,
+    h3 {
+    color: #52483f
+    
+    }
+    
     .profile-container {
-        flex-direction: row;
-        flex-basis: 50%;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        
+         
     }
 
-
-   
-
-    .profile-pic {
-        max-width: 50%;
-
-    }
-
-}
-
-
-
-@media (min-width: 1024px) {
     
-    .nav-bar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    
+    /* font-family: 'Raleway', sans-serif; */
+    
+    
+    
+    
+    /* === media queries === */
+    
+    @media screen and (min-width: 768px){
+    
+        .nav-bar,
+        .nav,
+        .portfolio,
+        .footer,
+        .profile-container,
+        .footer-bar {
+            display: flex;
+    
+        }
+    
+        .nav-bar{
+            flex-direction: column;
+            
+    
+        }
+
        
-    }
-   
+      
+        .profile-container {
+            flex-direction: row-reverse;
+            flex-basis: 100%;
+            justify-content: center;
+            width: 90%
+            
+        }
+
+        .portfolio {
+            flex-wrap: wrap;
+
+        }
+
+        .col {
+            flex-basis: 50%
+
+        }
+
     
-   
+    
+    
+       
+        .profile-pic {
+            max-width: 100%;
+    
+        }
+
+       
+    
+    }
+    
+    
+    
+    @media (min-width: 1024px) {
+        
+        .nav-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+        }
+       
+      
+        .profile-container div {
+            flex-basis: 35%;
+
+          }
+
+        .col {
+            flex-basis: 33.333%
+
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+          
+    
+    
+    
+    }
 
 
-  
-    .profile-container div {
-        flex-basis: 35%;
-      }
-}
 
+    
 
